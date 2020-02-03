@@ -11,6 +11,7 @@ import { environment } from "../environments/environment";
 // COMPONENTS
 import { AppComponent } from "./app.component";
 import { RoutingComponents } from "./app-routing.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, RoutingComponents],
@@ -18,7 +19,8 @@ import { RoutingComponents } from "./app-routing.module";
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,
-    AngularFireModule.initializeApp(environment)
+    AngularFireModule.initializeApp(environment),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
